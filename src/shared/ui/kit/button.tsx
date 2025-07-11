@@ -32,12 +32,19 @@ function LayoutButton({
 export function Button({
   children,
   variant = "primary",
-}: PropsWithChildren<{ variant?: "primary" | "secondary" | "play" }>) {
+  className,
+}: PropsWithChildren<{
+  variant?: "primary" | "secondary" | "play";
+  className?: string;
+}>) {
   if (variant === "secondary") {
     return (
       <LayoutButton
         isLeft
-        className="h-[42px] flex place-items-center gap-[10px] px-[20px] text-[#FF8A3A] bg-white rounded-[2px]"
+        className={clsx(
+          "h-[42px] flex place-items-center gap-[10px] px-[20px] text-[#FF8A3A] bg-white rounded-[2px]",
+          className
+        )}
         icon={
           <Image src={"/RightOrange.png"} width={20} height={20} alt="Right" />
         }
@@ -49,7 +56,13 @@ export function Button({
 
   if (variant === "play") {
     return (
-      <button className="cursor-pointer w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center shadow-[0_0_10px_5px_rgba(255,255,255,0.5)]">
+      <button
+        className={clsx(
+          (className =
+            "cursor-pointer w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center shadow-[0_0_10px_5px_rgba(255,255,255,0.5)]"),
+          className
+        )}
+      >
         <Image src={"/Play.png"} alt="Play" width={10} height={10} />
       </button>
     );
@@ -57,7 +70,10 @@ export function Button({
 
   return (
     <LayoutButton
-      className="h-[42px] flex place-items-center gap-[10px] px-[20px] bg-[#FF8A3A] text-white rounded-[2px]"
+      className={clsx(
+        "h-[42px] flex place-items-center gap-[10px] px-[20px] bg-[#FF8A3A] text-white rounded-[2px]",
+        className
+      )}
       icon={
         <Image src={"/RightWhite.png"} width={20} height={20} alt="Right" />
       }
