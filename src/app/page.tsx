@@ -1,4 +1,5 @@
 import { AboutUs } from "@/widgets/about-us";
+import { Contacts } from "@/widgets/contacts";
 import { JoinUs } from "@/widgets/join-us";
 import { Partners } from "@/widgets/partners/partners";
 import { Services } from "@/widgets/services";
@@ -12,6 +13,7 @@ export default function Home() {
       <Works />
       <Partners />
       <JoinUs />
+      <Contacts />
     </div>
   );
 }
