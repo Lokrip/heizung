@@ -7,10 +7,12 @@ export function MainScreen({
   image,
   title,
   description,
+  buttonText,
 }: {
   image: ReactNode;
   title: ReactNode;
   description: ReactNode;
+  buttonText: ReactNode;
 }) {
   return (
     <main className="relative h-[419px]">
@@ -27,9 +29,9 @@ export function MainScreen({
           </div>
 
           <div className="flex items-center gap-3 mt-[24px]">
-            <Button variant="secondary">Order a service</Button>
+            <Button variant="secondary">{buttonText}</Button>
             <Link href={"#"} className="flex items-center gap-[9px]">
-              <Button variant="play">Order a service</Button>
+              <Button variant="play" />
               <span className="text-[14px] font-medium text-white">
                 Our video!
               </span>

@@ -13,12 +13,6 @@ const AppLayoutNavbar: FC<PropsWithChildren> = ({ children }) => {
   return <>{children}</>;
 };
 
-const AppLayoutMainScreen: FC<PropsWithChildren> = ({ children }) => {
-  //Дальнейшая логика писаться будет тут
-
-  return <>{children}</>;
-};
-
 const AppLayoutContent: FC<PropsWithChildren> = ({ children }) => {
   //Дальнейшая логика писаться будет тут
 
@@ -40,7 +34,6 @@ export const AppLayoutParent: FC<PropsWithChildren> = ({ children }) => {
 export const AppLayout = attachSubComponents("AppLayout", AppLayoutParent, {
   Header: AppLayoutHeader,
   Navbar: AppLayoutNavbar,
-  MainScreen: AppLayoutMainScreen,
   Content: AppLayoutContent,
   Footer: AppLayoutFooter,
 });
