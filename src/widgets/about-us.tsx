@@ -2,6 +2,7 @@ import { Button } from "@/shared/ui/kit/button";
 import { Metric } from "@/shared/ui/kit/metric";
 import { TextWithLine } from "@/shared/ui/kit/text-with-line";
 import { Container } from "@/shared/ui/utils/container";
+import { Title } from "@/shared/ui/utils/title";
 import Image from "next/image";
 
 export function AboutUs() {
@@ -55,9 +56,9 @@ export function AboutUs() {
           <div className="w-full max-w-md">
             <TextWithLine text={"About our company"} />
 
-            <h2 className="text-[36px] font-[800] text-black max-w-[416px] mt-[6px]">
+            <Title className="max-w-[416px] mt-[6px]">
               We execute our ideas from the start to finish
-            </h2>
+            </Title>
 
             <p className="text-[13px] font-medium opacity-60 mt-[24px]">
               It is a long established fact that a reader will be distracted by

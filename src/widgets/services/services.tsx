@@ -1,14 +1,15 @@
 import { TextWithLine } from "@/shared/ui/kit/text-with-line";
 import { ServicesCard } from "./services-card";
+import { Title } from "@/shared/ui/utils/title";
 
 export function Services() {
   return (
     <section className="mt-[64px]">
       <div className="container max-w-7xl mx-auto flex flex-col items-center justify-center">
         <TextWithLine text={"Services we’re offering"} />
-        <h1 className="text-[36px] font-[800] text-center max-w-[413px]">
+        <Title className="text-center max-w-[413px]">
           We Provide our clients best services
-        </h1>
+        </Title>
 
         <div className="flex items-center gap-[24px] mt-[42px]">
           <ServicesCard
