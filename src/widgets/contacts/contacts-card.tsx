@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Image from "next/image";
 
 export function ContactsCard({
@@ -6,12 +7,14 @@ export function ContactsCard({
   height,
   title,
   description,
+  isTextBlack = false,
 }: {
   width: number;
   height: number;
   title: string;
   description: string;
   image: string;
+  isTextBlack?: boolean;
 }) {
   return (
     <div className="flex items-center gap-[24px]">
@@ -20,8 +23,22 @@ export function ContactsCard({
       </div>
 
       <div className="flex flex-col gap-[8px]">
-        <h4 className="text-[14px] font-[800] text-[#FFFFFF]">{title}</h4>
-        <p className="text-[13px] font-medium text-[#FFFFFF]">{description}</p>
+        <h4
+          className={clsx(
+            "text-[14px] font-[800] text-[#FFFFFF]",
+            isTextBlack && "text-black"
+          )}
+        >
+          {title}
+        </h4>
+        <p
+          className={clsx(
+            "text-[13px] font-medium text-[#FFFFFF]",
+            isTextBlack && "text-black opacity-60"
+          )}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );

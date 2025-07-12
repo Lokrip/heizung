@@ -10,7 +10,7 @@ export function OurWorks() {
         <TextWithLine text={"Our works"} />
         <Title className="mt-[6px]">Our works</Title>
 
-        <div className="grid grid-cols-3 gap-[24px] mt-[42px]">
+        <div className="grid gap-[24px] mt-[42px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <WorksCard
             image="/works/works-image-1.png"
             title="Bäder mit Beratung"

@@ -8,7 +8,7 @@ export function History() {
   return (
     <section className="bg-[#F4F5F8] pt-[68px] py-[35px] sm:px-6 lg:px-8">
       <Container>
-        <div className="flex gap-[80px] h-[550px]">
+        <div className="flex flex-col-reverse lg:flex-row gap-[40px] lg:gap-[80px] h-auto lg:h-[550px]">
           <div className="w-full max-w-md">
             <TextWithLine text={"About our company"} />
 
@@ -57,7 +57,7 @@ export function History() {
           </div>
         </div>
 
-        <div className="mt-[103px] flex items-center gap-[110px] justify-center">
+        <div className="mt-[103px] flex flex-wrap justify-center gap-[60px] lg:gap-[110px]">
           <Metric
             text={{ header: "10 y.", paragraph: "On the market" }}
             textSize={{

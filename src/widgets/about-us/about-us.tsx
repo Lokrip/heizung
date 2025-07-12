@@ -9,8 +9,8 @@ export function AboutUs() {
   return (
     <section className="bg-[#F4F5F8] mt-[80px] py-[35px] sm:px-6 lg:px-8">
       <Container>
-        <div className="flex gap-[80px] h-[550px]">
-          <div className="relative w-full">
+        <div className="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px]">
+          <div className="relative w-full h-[550px]">
             <div className="relative w-full h-[523px]">
               <div className="flex gap-[16px] absolute z-0 top-0 left-0 bottom-0 h-full">
                 <div className="w-[376px] h-[523px] overflow-hidden relative">
@@ -34,6 +34,7 @@ export function AboutUs() {
                 className="w-[301px] h-[348px] object-cover z-1 absolute bottom-0 left-[219px] shadow-lg shadow-gray-400"
               />
             </div>
+
 
             <div className="flex gap-[18px] py-[10px] px-[12px] absolute z-2 bg-white bottom-0 left-[104px] top-[470px]">
               <Image
@@ -69,21 +70,19 @@ export function AboutUs() {
               readable content of a page when looking at its layout. 
             </p>
 
-            <div className="mt-[41px] flex items-center gap-[51px]">
+            <div className="mt-[41px] flex flex-col sm:flex-row items-start sm:items-center gap-[24px] sm:gap-[51px]">
               <Metric
                 text={{
                   header: "10 y.",
                   paragraph: "On the market",
                 }}
               />
-
               <Metric
                 text={{
                   header: "10 y.",
                   paragraph: "On the market",
                 }}
               />
-
               <Metric
                 text={{
                   header: "10 y.",

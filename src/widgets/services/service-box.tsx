@@ -12,12 +12,12 @@ export function ServiceBox({
   image: string;
 }) {
   return (
-    <div className="flex gap-[24px]">
-      <div>
+    <div className="flex flex-col md:flex-row gap-[24px]">
+      <div className="flex-1">
         <h3 className="font-[800] text-[24px]">{title}</h3>
         <p className="text-[13px] font-medium mt-[6px]">{description}</p>
 
-        <div className="flex items-center gap-[20px]">
+        <div className="flex items-center gap-[20px] mt-[16px]">
           <Button>Learn more</Button>
           <Link
             href={"#"}
@@ -39,7 +39,7 @@ export function ServiceBox({
         alt={"Image service"}
         width={495}
         height={180}
-        className="h-[180px] w-[495px] object-cover"
+        className="w-full max-w-[495px] h-[180px] object-cover"
       />
     </div>
   );

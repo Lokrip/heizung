@@ -10,9 +10,9 @@ import { ContactsCard } from "./contacts-card";
 export function Contacts() {
   return (
     <section className="mt-[87px] py-[47px] bg-[#485769]">
-      <Container className="flex gap-[104px]">
+      <Container className="flex flex-col lg:flex-row gap-[40px] lg:gap-[104px]">
         <Form
-          className="w-[392px]"
+          className="w-full max-w-[392px]"
           inputs={
             <>
               <Input placeholder="Your name" />
@@ -24,7 +24,7 @@ export function Contacts() {
           button={<Button className="mt-[29px]">Send a message</Button>}
         />
 
-        <div className="max-w-[432px]">
+        <div className="w-full max-w-[432px]">
           <TextWithLine text={"Get a concultation"} />
 
           <Title className="max-w-[416px] mt-[6px] text-white">

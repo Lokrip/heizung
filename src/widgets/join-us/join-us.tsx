@@ -9,7 +9,7 @@ import { ImageOverlap } from "./image-overlap";
 export function JoinUs() {
   return (
     <section className="mt-[156px]">
-      <Container className="flex gap-[80px]">
+      <Container className="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px]">
         <div className="w-full max-w-md">
           <TextWithLine text={"About our company"} />
 
@@ -26,21 +26,19 @@ export function JoinUs() {
             content of a page when looking at its layout. 
           </p>
 
-          <div className="mt-[41px] flex items-center gap-[51px]">
+          <div className="mt-[41px] flex flex-col sm:flex-row items-start sm:items-center gap-[24px] sm:gap-[51px]">
             <Metric
               text={{
                 header: "10 y.",
                 paragraph: "On the market",
               }}
             />
-
             <Metric
               text={{
                 header: "10 y.",
                 paragraph: "On the market",
               }}
             />
-
             <Metric
               text={{
                 header: "10 y.",
@@ -49,7 +47,7 @@ export function JoinUs() {
             />
           </div>
 
-          <div className="mt-[52px] flex items-center gap-[25px]">
+          <div className="mt-[52px] flex flex-col sm:flex-row items-start sm:items-center gap-[16px] sm:gap-[25px]">
             <Button>Learn more</Button>
             <Link
               href={"#"}
@@ -60,7 +58,9 @@ export function JoinUs() {
           </div>
         </div>
 
-        <ImageOverlap />
+        <div className="w-full">
+          <ImageOverlap />
+        </div>
       </Container>
     </section>
   );

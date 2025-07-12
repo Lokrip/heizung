@@ -12,7 +12,7 @@ export function Partners() {
           <Title>Companies such as trust us</Title>
         </div>
 
-        <div className="mt-[58px] flex items-center gap-[24px]">
+        <div className="mt-[58px] flex flex-wrap justify-center gap-[24px]">
           <PartnersCard
             image="/partners/partners-image-1.png"
             width={94}

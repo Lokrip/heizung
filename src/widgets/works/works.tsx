@@ -5,12 +5,12 @@ import { WorksCard } from "./works-card";
 
 export function Works() {
   return (
-    <section className="mt-[90px] h-[365px]">
+    <section className="mt-[90px]">
       <Container>
         <TextWithLine text={"Our projects"} />
         <Title className="mt-1.5">Completed projects and Client reviews</Title>
 
-        <div className="flex items-center gap-[24px] mt-[42px] justify-center w-full">
+        <div className="flex flex-wrap justify-center gap-[24px] mt-[42px]">
           <WorksCard
             image="/works-image-1.png"
             title=" Bäder mit Beratung"

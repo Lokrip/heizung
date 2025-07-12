@@ -10,7 +10,7 @@ import { DownloadInput } from "@/shared/ui/kit/download-input";
 export function AboutJoinUs() {
   return (
     <section className="mt-[120px]">
-      <Container className="flex gap-[80px]">
+      <Container className="flex flex-col md:flex-row gap-[40px] md:gap-[80px]">
         <div className="w-full max-w-md">
           <TextWithLine text={"About our company"} />
 
@@ -24,7 +24,7 @@ export function AboutJoinUs() {
           </p>
 
           <Form
-            className="w-[392px] mt-[48px]"
+            className="w-full max-w-[392px] mt-[48px]"
             inputs={
               <>
                 <Input variant="secondary" placeholder="Your name" />
@@ -37,7 +37,9 @@ export function AboutJoinUs() {
           />
         </div>
 
-        <ImageOverlap />
+        <div className="w-full max-w-[480px] md:max-w-none flex justify-center">
+          <ImageOverlap />
+        </div>
       </Container>
     </section>
   );

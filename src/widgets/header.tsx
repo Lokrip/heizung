@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="bg-[#485769] h-[42px]">
-      <Container className="flex justify-between items-center h-full">
-        <div className="flex items-center gap-[18px]">
+    <header className="bg-[#485769] h-auto md:h-[42px]">
+      <Container className="flex flex-col md:flex-row justify-between items-start md:items-center gap-y-2 md:gap-y-0 h-full py-2 md:py-0">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-2 sm:gap-y-0 sm:gap-[18px]">
           <div className="flex items-center gap-1">
             <Image
               src="/Vector-4.png"
@@ -32,7 +32,7 @@ export const Header = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-[18px]">
+        <div className="flex gap-[18px]">
           <Link href="#">
             <Image
               src="/twitter.png"

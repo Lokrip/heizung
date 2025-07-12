@@ -12,7 +12,7 @@ export function OurTeam() {
           Trust warmth and comfort in your home to professionals
         </Title>
 
-        <div className="mt-[42px] flex gap-[21px]">
+        <div className="mt-[42px] flex flex-wrap gap-[21px] justify-center">
           <WorksCard
             image="/works-image-1.png"
             title=" Bäder mit Beratung"
