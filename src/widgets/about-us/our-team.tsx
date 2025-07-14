@@ -14,7 +14,7 @@ export function OurTeam() {
 
         <div className="mt-[42px] flex flex-wrap gap-[21px] justify-center">
           <WorksCard
-            image="/works-image-1.png"
+            image="/our-team/works-image-1.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
             classNames={{
@@ -25,7 +25,7 @@ export function OurTeam() {
             width={248}
           />
           <WorksCard
-            image="/works-image-1.png"
+            image="/our-team/works-image-2.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
             classNames={{
@@ -36,7 +36,7 @@ export function OurTeam() {
             width={248}
           />
           <WorksCard
-            image="/works-image-1.png"
+            image="/our-team/works-image-3.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
             classNames={{
@@ -47,7 +47,7 @@ export function OurTeam() {
             width={248}
           />
           <WorksCard
-            image="/works-image-1.png"
+            image="/our-team/works-image-4.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
             classNames={{
