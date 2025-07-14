@@ -61,7 +61,7 @@ export function WorksCard({
   return (
     <div
       className={clsx(
-        "relative overflow-hidden rounded-[6px] shadow-[10px_10px_60px_10px_#4857691A] w-[288px] h-[200px]",
+        "relative overflow-hidden rounded-[6px] shadow-[10px_10px_60px_10px_#4857691A] w-[267px] h-[188px]",
         classNames?.base
       )}
     >

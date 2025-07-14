@@ -10,7 +10,7 @@ import { ContactsCard } from "./contacts-card";
 export function Contacts() {
   return (
     <section className="mt-[87px] py-[47px] bg-[#485769]">
-      <Container className="flex flex-col lg:flex-row gap-[40px] lg:gap-[104px]">
+      <Container className="flex flex-col lg:flex-row gap-[80px] lg:gap-[104px]">
         <Form
           className="w-full max-w-[392px]"
           inputs={

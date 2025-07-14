@@ -12,22 +12,22 @@ export function Works() {
 
         <div className="flex flex-wrap justify-center gap-[24px] mt-[42px]">
           <WorksCard
-            image="/works-image-1.png"
+            image="/works/works-image-7.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
           />
           <WorksCard
-            image="/works-image-1.png"
+            image="/works/works-image-5.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
           />
           <WorksCard
-            image="/works-image-1.png"
+            image="/works/works-image-8.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
           />
           <WorksCard
-            image="/works-image-1.png"
+            image="/works/works-image-1.png"
             title=" Bäder mit Beratung"
             description="Providing the solutions for tech business"
           />
